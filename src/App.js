@@ -1,25 +1,53 @@
 import logo from './logo.svg';
 import './App.css';
+import RadioComponent from './RadioExample';
+import CountryComponent from './CountryExample';
+import CounterComponent from './CustomHooks/Counter';
+import CounterComponent2 from './CustomHooks/Counter2';
+import CheckBoxItems from './CheckBoxExample';
+import Pagination from './Pagination';
+import UserInput from './UserInput';
+import DebouncedSearch from './Debaunce/Debaunce';
+import TimerWatch from './StopWatch/TimerWatch';
+import Calculator from './Calculator/Calculator';
+import EmojiIcon from './EmojiSearch/EmojiIcon';
+import WeatherMaps from './WeatherApp/WeatherMaps';
+import HOC from './HOComponent.js/HOC';
+import Hello from './HOComponent.js/ListItem';
+import SampleComponent, { HOCofSampleComponent } from './MainHOC/SampleComponent';
+import DataFetch from './ApiCall/DataFetch';
+import ApiCall from './ApiAxiosCall/ApiCall';
+import ApiPostCall from './ApiAxiosCall/ApiPostCall';
+import CrudOperation from './CrudApp/CrudOperation';
+import CrudOperation2 from './CrudApp/CrudOperation22';
+import BrowserEvent from './BrowserEvent/BrowserEvent';
+import Counter from './CustomHooks/Counter';
+import Counter2 from './CustomHooks/Counter2';
 
 function App() {
+
+  // const TODOS = [
+  //   { id: '1', Name: 'Abdul Kadir Khan', completed: true },
+  //   { id: '2', Name: 'Abdul Jabir Khan', completed: false },
+  // ];
+
+  // <HOC data={TODOS} />
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {/* <HOCofSampleComponent name="abdul kadir khan" address="i am from gorakhpur uttarpradesh" /> */}
+      {/* <TimerWatch /> */}
+      {/* <Calculator /> */}
+      {/* <BrowserEvent /> */}
+      {/* <CrudOperation /> */}
+      {/* <RadioComponent /> */}
+      <Counter />
+      <Counter2 />
     </div>
   );
 }
 
 export default App;
+
+// className="App"
