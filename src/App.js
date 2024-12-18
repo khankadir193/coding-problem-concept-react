@@ -24,6 +24,7 @@ import BrowserEvent from './BrowserEvent/BrowserEvent';
 import Counter from './CustomHooks/Counter';
 import Counter2 from './CustomHooks/Counter2';
 import DebounceComp from './TechniqueMethod/DebounceComp';
+import ThrottlingComp from './TechniqueMethod/ThrottlingComp';
 
 function App() {
 
@@ -47,7 +48,9 @@ function App() {
       {/* <Counter /> */}
       {/* <Counter2 /> */}
 
-      <DebounceComp />
+      {/* throttlinga and debounce technique */}
+      {/* <DebounceComp /> */}
+      <ThrottlingComp />
 
     </div>
   );
