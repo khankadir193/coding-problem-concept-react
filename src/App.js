@@ -23,6 +23,7 @@ import CrudOperation2 from './CrudApp/CrudOperation22';
 import BrowserEvent from './BrowserEvent/BrowserEvent';
 import Counter from './CustomHooks/Counter';
 import Counter2 from './CustomHooks/Counter2';
+import DebounceComp from './TechniqueMethod/DebounceComp';
 
 function App() {
 
@@ -42,8 +43,12 @@ function App() {
       {/* <BrowserEvent /> */}
       {/* <CrudOperation /> */}
       {/* <RadioComponent /> */}
-      <Counter />
-      <Counter2 />
+      {/* counter using alongwith customhooks */}
+      {/* <Counter /> */}
+      {/* <Counter2 /> */}
+
+      <DebounceComp />
+
     </div>
   );
 }
