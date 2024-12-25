@@ -10,26 +10,27 @@ const ClockComp = () => {
             return time < 10 ? `0${time}` : time;
         };
 
-        setInterval(() => {
-            const timer = () => {
-                const currentTime = new Date();
-                const hours = formatTime(currentTime.getHours() % 12 || 12);
-                const minutes = formatTime(currentTime.getMinutes());
-                const seconds = formatTime(currentTime.getSeconds());
+        const timer = () => {
+            const currentTime = new Date();
+            const hours = formatTime(currentTime.getHours() % 12 || 12);
+            const minutes = formatTime(currentTime.getMinutes());
+            const seconds = formatTime(currentTime.getSeconds());
 
-                setHours(hours);
-                setMinutes(minutes);
-                setSeconds(seconds);
-                console.log('hours:-', hours, 'minutes:-', minutes, 'seconds:-', seconds);
-            };
+            setHours(hours);
+            setMinutes(minutes);
+            setSeconds(seconds);
+            console.log('hours:-', hours, 'minutes:-', minutes, 'seconds:-', seconds);
+        };
 
-            timer();
-        });
+        // timer();
+
+        const intervalId = setInterval(timer, 1000);
+
 
 
         return () => {
             console.log('function cleanuped...');
-            // clearInterval();
+            clearInterval(intervalId);
         };
     }, [hours, minutes, seconds]);
 
