@@ -50,7 +50,8 @@ function App() {
 
       {/* throttlinga and debounce technique */}
       {/* <DebounceComp /> */}
-      <ThrottlingComp />
+      {/* <ThrottlingComp /> */}
+      <CrudOperation2 />
 
     </div>
   );
