@@ -26,6 +26,7 @@ import Counter2 from './CustomHooks/Counter2';
 import DebounceComp from './TechniqueMethod/DebounceComp';
 import ThrottlingComp from './TechniqueMethod/ThrottlingComp';
 import ClockComp from './DigitalClock/ClockComp';
+import CountDown from './DigitalClock/CountDown';
 
 function App() {
 
@@ -53,7 +54,8 @@ function App() {
       {/* <DebounceComp /> */}
       {/* <ThrottlingComp /> */}
       {/* <CrudOperation2 /> */}
-      <ClockComp />
+      {/* <ClockComp /> */}
+      <CountDown />
 
     </div>
   );
