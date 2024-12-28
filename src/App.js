@@ -27,6 +27,7 @@ import DebounceComp from './TechniqueMethod/DebounceComp';
 import ThrottlingComp from './TechniqueMethod/ThrottlingComp';
 import ClockComp from './DigitalClock/ClockComp';
 import CountDown from './DigitalClock/CountDown';
+import FormValidationComp from './FormValidation/FormValidationComp';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
       {/* <ClockComp /> */}
       {/* <CountDown />  i need to practice timer this component */}
       {/* <TimerWatch /> */}
+      <FormValidationComp />
 
     </div>
   );
