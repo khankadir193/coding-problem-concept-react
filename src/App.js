@@ -55,7 +55,8 @@ function App() {
       {/* <ThrottlingComp /> */}
       {/* <CrudOperation2 /> */}
       {/* <ClockComp /> */}
-      <CountDown />
+      {/* <CountDown />  i need to practice timer this component */}
+      {/* <TimerWatch /> */}
 
     </div>
   );
